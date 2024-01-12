@@ -1,0 +1,8 @@
+Python -m vent .venv
+
+source .venv/bin/activate
+
+func init --python
+
+func new --name HttpExample --template "Http Trigger" --authlevel "anonymous"
+func azure functionapp publish organisationwebapi-python
